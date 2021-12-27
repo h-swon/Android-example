@@ -1,5 +1,6 @@
-# Created by https://www.toptal.com/developers/gitignore/api/android,androidstudio,kotlin
-# Edit at https://www.toptal.com/developers/gitignore?templates=android,androidstudio,kotlin
+
+# Created by https://www.toptal.com/developers/gitignore/api/androidstudio,android,kotlin
+# Edit at https://www.toptal.com/developers/gitignore?templates=androidstudio,android,kotlin
 
 ### Android ###
 # Built application files
@@ -190,6 +191,7 @@ obj/
 .idea/sqlDataSources.xml
 .idea/dynamic.xml
 .idea/uiDesigner.xml
+.idea/*
 
 # OS-specific files
 .DS_Store
@@ -233,4 +235,4 @@ fabric.properties
 
 !/gradle/wrapper/gradle-wrapper.jar
 
-# End of https://www.toptal.com/developers/gitignore/api/android,androidstudio,kotlin
+# End of https://www.toptal.com/developers/gitignore/api/androidstudio,android,kotlin
