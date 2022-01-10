@@ -17,9 +17,6 @@ class MainActivity : AppCompatActivity() {
         binding.user = User(ObservableField("sungwon"), ObservableInt(20))
         binding.myText = "Hello"
 
-        binding.userNameText.setOnClickListener {
-            binding.user?.name?.set("clicked")
-        }
 
         // Observable 컬렉션 사용
         val student = ObservableArrayMap<String, Any>()
@@ -31,5 +28,13 @@ class MainActivity : AppCompatActivity() {
         student2.add(3)
         student2.add("sungwon")
         binding.student2 = student2
+
+        val item = ObservableData()
+        item.name = "sung"
+        binding.person = item
+        binding.userNameText.setOnClickListener {
+            binding.user?.name?.set("clicked")
+            item.name = "won"
+        }
     }
 }

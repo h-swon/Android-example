@@ -20,6 +20,10 @@
         <variable
             name="student2"
             type="androidx.databinding.ObservableList" />
+
+        <variable
+            name="person"
+            type="com.swon.databinding_example.ObservableData" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -81,5 +85,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:text="나이" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp"
+            android:text="@{person.name}"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="이름"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
