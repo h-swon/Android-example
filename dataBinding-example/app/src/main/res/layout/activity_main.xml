@@ -11,6 +11,15 @@
         <variable
             name="myText"
             type="String" />
+
+
+        <variable
+            name="student"
+            type="androidx.databinding.ObservableMap" />
+
+        <variable
+            name="student2"
+            type="androidx.databinding.ObservableList" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -47,5 +56,30 @@
             app:layout_constraintTop_toBottomOf="@id/user_name_text"
             tools:text="29" />
 
+        <TextView
+            android:id="@+id/student_age_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@{String.valueOf(student.age)}"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="나이" />
+
+        <TextView
+            android:id="@+id/student_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:text="@{String.valueOf(student2[1])}"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="나이" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
